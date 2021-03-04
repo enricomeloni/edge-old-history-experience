@@ -1,0 +1,24 @@
+{
+    "name": "Edge Old History Experience",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "A Chromium extension to open the old edge history tab instead of the new history pane",
+    "permissions": [
+        "history", "tabs"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "commands": {
+        "open-history-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+H"
+            },
+            "description": "Open History Tab"
+        }
+    },
+    "icons": {
+        "16": "icon_16.png"
+    }
+}
